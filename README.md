@@ -3,19 +3,19 @@
 Esta é uma API REST desenvolvida com **Spring Boot** para consulta de cotações de moedas, utilizando a AwesomeAPI. O projeto foca em **Programação Orientada a Aspectos (AOP)** para monitoramento de performance utilizando logs.
 **Tecnologias Utilizadas:**
 
-    **Java 21**
+    Java 21
 
-    **Spring Boot**
+    Spring Boot
 
-    **Spring Cloud OpenFeign**
+    Spring Cloud OpenFeign
 
-    **Spring Data JDBC**
+    Spring Data JDBC
 
-    **H2 Database**
+    H2 Database
 
-    **Spring AOP**
+    Spring AOP
 
-    **Maven**
+    Maven
 
 🛠️ **Destaques Técnicos**
 
@@ -23,9 +23,9 @@ Esta é uma API REST desenvolvida com **Spring Boot** para consulta de cotaçõe
 
 Utilizei Aspectos para criar uma auditoria transparente. Através da anotação @LogExecutionTime, o sistema consegue:
 
-    **Calcular o tempo exato de resposta da API externa.**
+    Calcular o tempo exato de resposta da API externa.
 
-    **Salvar automaticamente os logs no banco de dados (Moeda, Valor, Tempo de Resposta e Data).**
+    Salvar automaticamente os logs no banco de dados (Moeda, Valor, Tempo de Resposta e Data).
 
 **2. Comunicação Declarativa com OpenFeign**
 
