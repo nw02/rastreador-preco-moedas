@@ -20,6 +20,7 @@ Tecnologias Utilizadas:
 🛠️ Destaques Técnicos
 
 1. Programação Orientada a Aspectos (Spring AOP)
+
 Utilizei Aspectos para criar uma auditoria transparente. Através da anotação @LogExecutionTime, o sistema consegue:
 
     Calcular o tempo exato de resposta da API externa.
@@ -27,9 +28,11 @@ Utilizei Aspectos para criar uma auditoria transparente. Através da anotação 
     Salvar automaticamente os logs no banco de dados (Moeda, Valor, Tempo de Resposta e Data).
 
 2. Comunicação Declarativa com OpenFeign
+
 Em vez de usar RestTemplate, usei o OpenFeign para fazer as requisições à AwesomeAPI. Isso torna o código mais limpo e fácil de manter.
 
 3. Tratamento de Erros
+
 Implementei um ErrorDecoder customizado para o Feign. Isso permite que a aplicação entenda erros específicos da API externa:
 
     Erro 404: Mapeado para uma MoedaNaoEncontradaException com mensagem.
@@ -51,6 +54,7 @@ Bash
 🗺️ Exemplos de Endpoints
 
 Consultar Preço de Moeda
+
 GET /preco/{moeda}
 
     Exemplo: GET /preco/USD
@@ -65,5 +69,7 @@ JSON
 }
 
 Visualizar Logs de Auditoria (AOP)
+
 GET /
+
 (Retorna todos os logs de execução e performance salvos).
