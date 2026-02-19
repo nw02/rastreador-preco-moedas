@@ -47,12 +47,6 @@ Clonar o repositório:
 git clone https://github.com/seu-usuario/rastreador-preco-moedas.git
 ```
 
-Configuração do application.properties:
-```Properties
-
-name.service.url=https://economia.awesomeapi.com.br/json
-```
-
 Executar a aplicação:
 ```Bash
 ./mvnw spring-boot:run
